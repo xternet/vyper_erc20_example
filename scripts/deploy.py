@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 from brownie import Token, accounts
 
+acct = accounts.load('1')
+
 def main():
-	accounts[0].deploy(Tokenx, "Token", "TKN", 18, 1000)
+	acct.deploy(Token, "Token", "TKN", 18, 1000)
